@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<configuration>
+	<param name="NODE" value="903" />
+        <param name="KEY" value="cryptokey.sksl" />
+	<table name="VIT" >
+             <row tag="1">
+                        <param name="TYPE" value="CONNECTOR" />
+                        <param name="DEST_NODE" value="902" />
+                        <param name="IP_PORT">
+                                <value value="10.20.0.95:1500" />
+                        </param>
+                        <param name="KA_RECV" value="200" />
+                        <param name="KA_SEND" value="400" />
+                        <param name="CONNECTECTION_TIME" value="0" />
+                        <param name="RECONNECT_TIME" value="10" />
+                        <param name="TTL" value="10" />
+                        <param name="TTL2" value="10" />
+                        <param name="MAX_COUNT" value="1" />
+                </row>
+	</table>
+</configuration>

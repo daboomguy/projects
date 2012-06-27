@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="tconsole" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/tconsole" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/tconsole" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++0x" />
+			<Add option="-g" />
+			<Add option="-pthread -static `/home/mikhail/Programming/common/wxWidgets-2.9.3/wx-config --cflags`" />
+			<Add directory="../trouter/lib/libevent/include" />
+		</Compiler>
+		<Linker>
+			<Add option="`/home/mikhail/Programming/common/wxWidgets-2.9.3/wx-config --libs`" />
+			<Add library="/usr/local/lib/libevent.a" />
+			<Add library="rt" />
+		</Linker>
+		<Unit filename="CAesCrypter.cpp" />
+		<Unit filename="CAesCrypter.h" />
+		<Unit filename="CCryptoKeyBase.cpp" />
+		<Unit filename="CCryptoKeyBase.h" />
+		<Unit filename="CProtocol.cpp" />
+		<Unit filename="CProtocol.h" />
+		<Unit filename="CWorker.cpp" />
+		<Unit filename="CWorker.h" />
+		<Unit filename="aes.cpp" />
+		<Unit filename="aes.h" />
+		<Unit filename="config.cpp" />
+		<Unit filename="crc32.cpp" />
+		<Unit filename="crc32.h" />
+		<Unit filename="frmConsole.cpp" />
+		<Unit filename="frmConsole.h" />
+		<Unit filename="frmMain.cpp" />
+		<Unit filename="frmMain.h" />
+		<Unit filename="ibuffer.h" />
+		<Unit filename="myfunc.cpp" />
+		<Unit filename="myfunc.h" />
+		<Unit filename="psnix.h" />
+		<Unit filename="pstype.h" />
+		<Unit filename="pugixml.cpp" />
+		<Unit filename="pugixml.hpp" />
+		<Unit filename="sha1.cpp" />
+		<Unit filename="sha1.h" />
+		<Unit filename="tconsoleApp.cpp" />
+		<Unit filename="tconsoleApp.h" />
+		<Unit filename="typenix.h" />
+		<Unit filename="wxsmith/frmConsole.wxs" />
+		<Unit filename="wxsmith/frmMain.wxs" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="tconsoleApp.cpp" main="tconsoleFrame" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxFrame wxs="wxsmith/frmMain.wxs" src="frmMain.cpp" hdr="frmMain.h" name="frmMain" language="CPP" />
+					<wxFrame wxs="wxsmith/frmConsole.wxs" src="frmConsole.cpp" hdr="frmConsole.h" name="frmConsole" language="CPP" />
+				</resources>
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

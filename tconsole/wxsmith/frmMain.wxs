@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="frmMain">
+		<title>tconsole </title>
+		<size>919,640</size>
+		<bg>#505050</bg>
+		<style>wxCAPTION|wxDEFAULT_FRAME_STYLE|wxSYSTEM_MENU|wxMAXIMIZE_BOX|wxMINIMIZE_BOX|wxTAB_TRAVERSAL|wxCLIP_CHILDREN</style>
+		<object class="wxMenuBar" variable="MenuBar1" member="yes">
+			<object class="wxMenu" variable="Menu1" member="yes">
+				<label>File</label>
+				<object class="wxMenuItem" name="idMenuNew" variable="MenuItem1" member="yes">
+					<label>New</label>
+					<accel>Ctrl+N</accel>
+					<handler function="OnNew" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="idClose" variable="MenuItem3" member="yes">
+					<label>Close</label>
+					<accel>Ctrl+D</accel>
+					<handler function="OnMenuCloseConsoleSelected" entry="EVT_MENU" />
+				</object>
+				<object class="separator" />
+				<object class="wxMenuItem" name="wxID_CLOSE" variable="MenuItem2" member="no">
+					<label>Quit</label>
+					<handler function="OnClose" entry="EVT_MENU" />
+				</object>
+			</object>
+		</object>
+		<object class="wxStatusBar" name="ID_STATUSBAR1" variable="StatusBar" member="yes">
+			<fields>1</fields>
+			<widths>-10</widths>
+			<styles>wxSB_NORMAL</styles>
+		</object>
+	</object>
+</wxsmith>
